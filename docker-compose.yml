@@ -1,0 +1,52 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: pedropereira
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: demo
+    container_name: demo-app
+    restart: unless-stopped
+    working_dir: /var/www
+    volumes:
+      - ./application:/var/www
+    networks:
+      - demo
+
+  mysql:
+    image: mysql:5.7
+    container_name: demo-mysql
+    restart: unless-stopped
+    tty: true
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: homestead
+      MYSQL_USER: homestead
+      MYSQL_PASSWORD: secret
+      MYSQL_ROOT_PASSWORD: secret
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - ./docker-compose/mysql:/docker-entrypoint-initdb.d
+    networks:
+      - demo
+
+  nginx:
+    image: nginx:alpine
+    container_name: demo-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./application:/var/www
+      - ./docker-compose/nginx:/etc/nginx/conf.d
+    networks:
+      - demo
+
+networks:
+  demo:
+    driver: bridge
