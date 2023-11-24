@@ -45,9 +45,9 @@ Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvo
 
 As configurações para Nginx, PHP e MySQL estão localizadas nos respectivos diretórios dentro do diretório `config`:
 
-- `config/nginx`: Aqui você encontrará a configuração do servidor Nginx.
-- `config/php`: Aqui você encontrará a configuração do PHP.
-- `config/mysql`: Aqui você encontrará a configuração do MySQL.
+- `docker-compose/nginx`: Aqui você encontrará a configuração do servidor Nginx.
+- `docker-compose/php`: Aqui você encontrará a configuração do PHP.
+- `docker-compose/mysql`: Aqui você encontrará a configuração do MySQL.
 
 ## Persistência de dados
 
