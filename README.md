@@ -29,6 +29,17 @@ Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvo
 4. Execute o comando `docker-compose down` ira derrubar o container
 5. Execute o comando `docker-compose up -d` para iniciar o container novamente
 
+## Sertifique-se que o seu projeto esteja na pasta 'application'. Caso a pasta app não existe, crie a pasta.
+### A listagem de pastas do projeto deve ficar:
+
+    application/
+    cocker-compose/
+    docker/
+    .gitignore
+    docker-compose.yml
+    Dockerfile
+    readme.md
+    
 - Isso iniciará três contêineres Docker:
 - `nginx`: Este contêiner executa o servidor Nginx, que está configurado para servir o aplicativo PHP.
 - `php`: Este contêiner executa o interpretador PHP.
