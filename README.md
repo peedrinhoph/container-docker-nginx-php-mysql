@@ -30,7 +30,7 @@ Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvo
 5. Execute o comando `docker-compose up -d` para iniciar o container novamente
 
 ## Sertifique-se que o seu projeto esteja na pasta 'application'. Caso a pasta app não existe, crie a pasta.
-### A listagem de pastas do projeto deve ficar:
+  A listagem de pastas do projeto deve ficar:
 
     application/
     cocker-compose/
