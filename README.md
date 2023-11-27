@@ -1,8 +1,8 @@
 # Sumário
 
 1. [Projeto Docker com Nginx, PHP e MySQL](#projeto-docker-com-nginx-php-e-mysql)
-2. [Pré-requisitos]
-3. [Como usar]
+2. [Pré-requisitos](#pre-requisitos)
+3. [Como usar](#como-usar)
 4. [Iniciando o composer dentro do projeto PHP se necessário]
 5. [Configuração]
 6. [Persistência de dados]
@@ -29,7 +29,7 @@ Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvo
 4. Execute o comando `docker-compose down` ira derrubar o container
 5. Execute o comando `docker-compose up -d` para iniciar o container novamente
 
-## Sertifique-se que o seu projeto esteja na pasta 'application'. Caso a pasta app não existe, crie a pasta.
+# Sertifique-se que o seu projeto esteja na pasta 'application'. Caso a pasta app não existe, crie a pasta.
   A listagem de pastas do projeto deve ficar:
 
     application/
