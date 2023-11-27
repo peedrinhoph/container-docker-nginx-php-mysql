@@ -12,7 +12,7 @@
 10. Comandos Básicos do Docker
 11. Comandos Básicos do Docker Compose
 
-<a name="projeto" />## Projeto Docker com Nginx, PHP e MySQL
+# Projeto Docker com Nginx, PHP e MySQL
 
 Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvolvimento com Nginx, PHP e MySQL.
 
