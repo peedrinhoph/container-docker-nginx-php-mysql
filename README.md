@@ -21,7 +21,10 @@ Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvo
 
 ## Como usar
 
-1. Clone este repositório
+1. Clone este repositório no seu diretório
+   - Vá até o arquivo `docker-compose.yml` e altere o argumento user: pedropereira, colocando o seu usuário
+   - Se necessário poderá trocar a versão do PHP no arquivo `docker-compose.yml` em PHP_VERSION: '8.2-fpm', obtenha a versão de sua preferencia em https://hub.docker.com/_/php
+
 2. Navegue até o diretório do projeto
 3. Execute o comando `docker-compose up -d --build` para que o docker monte o container. Após a montagem
 4. Execute o comando `docker-compose down` ira derrubar o container
