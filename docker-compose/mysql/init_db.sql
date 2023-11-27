@@ -38,4 +38,4 @@ INSERT INTO `products` (`id`, `name`, `slug`, `price`, `image`, `description`, `
 (9, 'Macbook Pro', 'macbook-pro', 20000.00, 'https://m.media-amazon.com/images/I/61aUBxqc5PL._AC_SL1500_.jpg', 'macbook pro', '2023-01-25 12:26:42', '2023-01-25 12:26:42');
 
 INSERT INTO `users` (`id`, `firstName`, `lastName`, `email`, `password`, `created_at`, `updated_at`) VALUES
-(1, 'Alexandre', 'Cardoso', 'xandecar@hotmail.com', '$2y$10$dq2UwNUHVA3W7eU1TX6DveJcrYw6TU7DVC6X33KMfSxbN1wCIH/V2', '2023-01-25 10:15:08', '2023-01-25 10:15:08');
+(1, 'Teste', 'PHP', 'pedro23henrique@hotmail.com', '$2y$10$dq2UwNUHVA3W7eU1TX6DveJcrYw6TU7DVC6X33KMfSxbN1wCIH/V2', '2023-01-25 10:15:08', '2023-01-25 10:15:08');
