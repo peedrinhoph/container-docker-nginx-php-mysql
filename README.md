@@ -29,10 +29,9 @@ Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvo
 3. Execute o comando `docker-compose up -d --build` para que o docker monte o container. Após a montagem
 4. Execute o comando `docker-compose down` ira derrubar o container
 5. Execute o comando `docker-compose up -d` para iniciar o container novamente
-
-# Sertifique-se que o seu projeto esteja na pasta 'application'. Caso a pasta app não existe, crie a pasta.
+6. Seu projeto PHP ou Laravel deve estar na pasta `application`. Caso a pasta `application` não existe, crie a pasta `mkdir application` no Linux.
   A listagem de pastas do projeto deve ficar:
-
+```ruby
     application/
     cocker-compose/
     docker/
@@ -40,7 +39,7 @@ Este projeto é um exemplo de como usar Docker para criar um ambiente de desenvo
     docker-compose.yml
     Dockerfile
     readme.md
-    
+```    
 - Isso iniciará três contêineres Docker:
 - `nginx`: Este contêiner executa o servidor Nginx, que está configurado para servir o aplicativo PHP.
 - `php`: Este contêiner executa o interpretador PHP.
