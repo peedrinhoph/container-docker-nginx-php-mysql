@@ -1,16 +1,14 @@
 # Sumário
 
 1. [Projeto Docker com Nginx, PHP e MySQL](#projeto-docker-com-nginx-php-e-mysql)
-2. [Pré-requisitos](#pre-requisitos)
+2. [Pré-requisitos](#pré-requisitos)
 3. [Como usar](#como-usar)
-4. [Iniciando o composer dentro do projeto PHP se necessário]
-5. [Configuração]
-6. [Persistência de dados]
-7. [Conclusão]
-8. [Comandos Básicos do Docker]
-9. [Comandos Básicos do Docker Compose]
-10. [Comandos Básicos do Docker]
-11. [Comandos Básicos do Docker Compose]
+4. [Iniciando o composer dentro do projeto PHP se necessário](#iniciando-o-composer-dentro-do-projeto-PHP-se-necessário)
+5. [Configuração](#configuração)
+6. [Persistência de dados](#persistência-de-dados)
+7. [Conclusão](#conclusão)
+8. [Comandos Básicos do Docker](#comandos-básicos-do-docker)
+9. [Comandos Básicos do Docker Compose](#comandos-básicos-do-docker)
 
 ## Projeto Docker com Nginx, PHP e MySQL
 
