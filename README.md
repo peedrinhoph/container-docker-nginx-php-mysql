@@ -1,6 +1,6 @@
 # Sumário
 
-1. [Projeto Docker com Nginx, PHP e MySQL]
+1. [Projeto Docker com Nginx, PHP e MySQL](#projeto-docker-com-nginx-php-e-mysql)
 2. [Pré-requisitos]
 3. [Como usar]
 4. [Iniciando o composer dentro do projeto PHP se necessário]
