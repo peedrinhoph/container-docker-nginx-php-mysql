@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     working_dir: /var/www
     volumes:
-      - ./application:/var/www
+      - ./application/laravel:/var/www
     networks:
       - demo
 
@@ -47,7 +47,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./application:/var/www
+      - ./application/laravel:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d
     networks:
       - demo
