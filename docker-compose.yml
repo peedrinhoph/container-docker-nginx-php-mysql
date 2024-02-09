@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     working_dir: /var/www
     volumes:
-      - ./application:/var/www
+      - ./application/laravel:/var/www
     networks:
       - demo
 
@@ -47,16 +47,33 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./application:/var/www
+      - ./application/laravel:/var/www
       - ./docker-compose/nginx:/etc/nginx/conf.d
     networks:
       - demo
 
-  # redis
-#  redis:
-#    image: redis:latest
-#    networks:
-#        - demo
+  phpmyadmin:
+    container_name: demo-phpmyadmin
+    image: phpmyadmin:5.2
+    restart: always
+    ports:
+      - '8888:80'
+    networks:
+      - demo
+    environment:
+      PMA_HOST: demo-mysql
+    depends_on:
+      - db
+
+  redis:
+    container_name: demo-redis
+    build:
+      context: ./docker-compose/redis
+      dockerfile: Dockerfile
+    ports:
+      - '6379:6379'
+    networks:
+      - demo
         
 networks:
   demo:
