@@ -52,11 +52,28 @@ services:
     networks:
       - demo
 
-  # redis
-#  redis:
-#    image: redis:latest
-#    networks:
-#        - demo
+  phpmyadmin:
+    container_name: demo-phpmyadmin
+    image: phpmyadmin:5.2
+    restart: always
+    ports:
+      - '8888:80'
+    networks:
+      - demo
+    environment:
+      PMA_HOST: demo-mysql
+    depends_on:
+      - db
+
+  redis:
+    container_name: demo-redis
+    build:
+      context: ./docker-compose/redis
+      dockerfile: Dockerfile
+    ports:
+      - '6379:6379'
+    networks:
+      - demo
         
 networks:
   demo:
