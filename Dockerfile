@@ -23,6 +23,7 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 
 RUN docker-php-ext-install iconv simplexml fileinfo soap
 
+RUN pecl install xdebug && docker-php-ext-enable xdebug
 # Get latest Composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
@@ -40,6 +41,6 @@ RUN mkdir -p /home/$user/.composer && \
 WORKDIR /var/www
 
 # Copy custom configurations PHP
-COPY docker-compose/php/custom.ini /usr/local/etc/php/conf.d/custom.ini
+COPY docker-compose/php/dev.ini /usr/local/etc/php/conf.d/custom.ini
 
 USER $user
